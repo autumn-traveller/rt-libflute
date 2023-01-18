@@ -17,5 +17,5 @@ jobs:
         run: |
           ls -aR ${{ github.workspace }}
       #- run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: sudo apt install -y ninja-build cmake libssl-dev libboost-all-dev libspdlog-dev libtinyxml2-dev libnl-3-dev gcc pkg-config
+      - run: sudo apt install -y ninja-build cmake libssl-dev libboost-all-dev libspdlog-dev libtinyxml2-dev libnl-3-dev gcc pkg-config libconfig++-dev
       - run: ${{ github.workspace }}/build.sh
